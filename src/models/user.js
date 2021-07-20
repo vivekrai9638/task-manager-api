@@ -62,7 +62,7 @@ userSchema.methods.toJSON = function () {
 
   delete userObject.password;
   delete userObject.tokens;
-  userObject.avatar = `http://localhost:3000/users/${userObject._id}/avatar`;
+  userObject.avatar = `https://vivek-task-manager-api.herokuapp.com/users/${userObject._id}/avatar`;
 
   return userObject;
 };
